@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, #4B7BE5,#92B4EC);
+}
+form{
+    width: 300px;
+    height: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    
+}
+.form-container{
+    position: relative;
+}
+input[type=text], input[type=email], input[type=password]{
+    width: 90%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid rgb(170, 223, 255);
+    background-color: inherit;
+    color: white;
+    
+}
+::placeholder{
+    color: white;
+}
+span{
+    color: rgb(247, 67, 67);
+    display: none;
+}
+.show{
+    display: block;
+}
+button{
+    margin-top: 15px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 25px;
+    border: 1px solid rgb(170, 223, 255);
+    background-color: #4B7BE5;
+    color: white;
+    cursor: pointer;
+}
+form h3{
+    color: white;
+    font-size: 25px;
+}
+.head{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    margin: 0 5px 0 5px;
+    border-radius: 5px;
+}
+.class{
+    width: 301px;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    background-color: rgba(207, 204, 204, 0.1);
+    backdrop-filter: blur(20px);
+    top: 0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    
+}
+.ellipse{
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#AB46D2, #FF6FB5);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -2;
+    top: -5%;
+    left: -8%;
+}
+.ellipse::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#FEB139, #F6F54D);
+    border-radius: 50%;
+    top: 200%;
+    left: 303%;
+}
+.ellipse::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#F190B7, #FAD9E6);
+    border-radius: 50%;
+    top: 400%;
+}
+input[type=checkbox]{
+    background-color: #4B7BE5;
+}
+#check{
+  float: left;
+  margin-right: 5px;
+}
+.checkBox{
+    text-align: start;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    margin-top: 2%;
+}

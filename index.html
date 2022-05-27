@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="" >
+            <div class="head">
+                <div class="line"></div>
+                <h3>Register</h3>
+                <div class="line"></div>
+            </div><br>
+            <input type="text" placeholder="Name"   id="name"><br>
+            <span id="name-err">name is required</span><br>
+            <input type="text" placeholder="Surname"   id="surname"><br>
+            <span id="surname-err">surname is required</span><br>
+            <input type="email" placeholder="Email"   id="email"><br>
+            <span id="email-err">email is required</span><br>
+            <input type="password" placeholder="Password"   id="password"><br>
+            <span id="password-err">password is required</span><br>
+            <input type="password" placeholder="Confirm Password"   id="confpassword"><br>
+             <div class="checkBox">
+                <input type="checkbox" name="showPassword" id="check">Show Passwords
+             </div>
+        
+            
+            <span id="confpassword-err">confpassword is required</span><br>
+            <button type="submit" onclick="validateInput()">Submit</button>
+        </form>
+        <div class="class"></div>
+        <div class="ellipse"></div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
